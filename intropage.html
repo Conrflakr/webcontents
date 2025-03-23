@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>Jerry's Page
 </title>
 <style>
@@ -14,10 +15,14 @@
     li { color : #69629C;}
     li span { color :#453F6E;}
     table { text-align : center; border-color: #6553DB; color: #453F6E;}
+    audio {margin-left: 20px;}
 </style>
 </head>
+
+
 <body>
-    <h3>About Me</h3>
+    <header>
+    <h3>About Me</h3> <!--Describe yourself and mp3-->
     <hr>
         <p>안녕하세요? 김제리(<em>Jerry</em>)입니다.
             저는 반 필리핀인 반 한국인입니다. 
@@ -26,32 +31,81 @@
             우리 반 수업 중 하나는 "프로그래밍 언어 실습"인데 
             코딩은 계획에서 시작해야 한다는 것을 배웠습니다.<br>
             하지만 이 웹페이지를 만들어서야 계획이 왜 중요한지 알게 되었습니다...
-        </p><br>
-        <h3>관심 분야</h3>
+        </p>
+        <audio src="audio/intro.mp3" controls><audio
+        <br>
+    </header>
+
+
+    <nav>
+        <h3>목차</h3>
+        <ul>
+            <li><span><a href="#interests">관심 분야</a></span></li>
+            <li><span><a href="#exercise">운동 예시</a></span></li>
+            <li><span><a href="#reading">독서 일정</a></span></li>
+        </ul>
+    </nav><br>
+
+
+<section>
+    <article>
+        <h3 id="interests">관심 분야</h3> <!--Interests with list-->
         <hr>
     <ul>
-        <li><span>일본<br>
+        <li><span>일본<br> <!--1-->
             <ul style="margin-left: -15px;">
                 <li><span>日本語(일본어) - 제 모든 기기에는 일본어가 설치되어 있습니다</li>
                 <li><span>일본 음악 - 애니 오프닝과 엔딩, J-pop, 보컬로이드</li>
             </ul>
         </li>
-        <li><span>게임<br>
+
+        <li><span>게임<br> <!--2-->
             <ul style="margin-left: -15px;">
                 <li><span>게임을 할 때 한국 뉴스를 듣습니다.</li>
             </ul>
         </li>
-        <li><span>산책<br>
+
+        <li><span>산책<br> <!--3-->
             <ul style="margin-left: -15px;">
                 <li><span>공원에서 고양이랑 친해졌던 적 있습니다.</li>
             </ul>
         </li>
-        <li><span>독서<br>
+
+        <li><span>운동(아래 참조)<br> <!--4-->
+            <ul style="margin-left: -15px;">
+                <li><span>다양한 운동을 좋아합니다.</li>
+            </ul>
+        </li>
+
+        <li><span>독서(아래 참조)<br> <!--5-->
             <ul style="margin-left: -15px;">
                 <li><span>도서관에 가는 것을 좋아합니다.</li>
                 <li><span>다양한 언어로 된 책을 읽습니다.</li>
             </ul>
         </li>
+    </ul><br>
+</article>
+
+
+<article>
+    <h3 id="exercise">운동 예시</h3> <!--Exercise examples with images-->
+    <hr><br>
+        <table border : 1;>
+            <tbody>
+                <tr><td><img src="media/bike.jpg" width="250" height="250"></td>
+                    <td><img src="media/stretching.jpg" width="350" height="250"></td>
+                    <td><img src="media/neck.jpg" width="250" height="250"></td></tr>
+                <tr><td>자전거 타기</td><td>스트레칭</td><td>목 운동</td></tr>
+                <tr><td>학교 갈 때 자전거를 탑니다.</td>
+                    <td>올림픽 웨이트 리프터들이 아주 유연합니다.</td>
+                    <td>힘이 센 목이 좋다고 생각합니다</td></tr>
+            </tbody>
+        </table><br>
+    </article>
+
+    <article>
+        <h3 id="reading">독서 일정</h3> <!--Library schedule graph-->
+        <hr><br>
         <table border : 1;>
             <caption>독서 일정</caption>
             <thead>
@@ -63,22 +117,11 @@
                 <tr><td>3</td><td>일본어</td><td>13</td></tr>
             </tfoot>
         </table><br>
-        <li><span>운동<br>
-            <ul style="margin-left: -15px;">
-                <li><span>다양한 운동을 좋아합니다.</li>
-            </ul>
-        </li>
-        <table border : 1;>
-            <tbody>
-                <tr><td><img src="media/bike.jpg" width="250" height="250"></td>
-                    <td><img src="media/stretching.jpg" width="350" height="250"></td>
-                    <td><img src="media/neck.jpg" width="250" height="250"></td></tr>
-                <tr><td>자전거 타기</td><td>스트레칭</td><td>목 운동</td></tr>
-                <tr><td>학교 갈 때 자전거를 탑니다.</td>
-                    <td>올림픽 웨이트 리프터들이 아주 유연합니다.</td>
-                    <td>힘이 센 목이 좋다고 생각합니다</td></tr>
-            </tbody>
-        </table>
-    </ul>
+    </article>
+    </section>
+
+    <footer>
+        <p>2025 3월 23일 작성</p>
+    </footer>
 </body>
 </html>
