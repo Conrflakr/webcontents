@@ -9,45 +9,64 @@
 
                    <!-- hallo why do comments break the first style if I put it one line lower??? -->
         <style>
+            body { 
+                background-color:#E8DAC7;
+            }
+            h1 {
+                text-align: center;
+                color: #A79D59;
+                text-shadow: 2px -2px 5px white;
+            }
             h3 { 
                 margin-left: 20px;
-                color : #6553DB; 
+                color : #4A32FC; 
                 font-size: x-large;
             }
             p { 
-                margin-left : 40px; 
+                margin-left : 20px; 
                 font-size: large; 
-                color: #453F6E;
+                color: #5C577D;
             }
-            ul { 
-                margin-left : 20px;
-            }
-            body { 
-                background-color:#E8DAC7;
+            p.start {
+                font: 1em consolas, serif;
+                text-indent: 3%;
             }
             hr { 
                 background-color : #69629C; 
                 border: #69629C; 
                 height : 2px;
             }
+            audio {
+                margin-left: 20px;
+            }
             ul { 
+                margin-left : 20px;
                 font-size: large; 
                 margin-bottom : 20px;
             }
+            
             li { 
                 color : #69629C;
             }
             li span { 
-                color :#453F6E;
+                color :#5C577D;
+            }
+            a.contents {
+                text-decoration: none;
             }
             table { 
                 text-align : center;
-                border-color: #6553DB;
-                color: #453F6E; 
-                margin-left: 40px;
-                }
-            audio {
-                margin-left: 40px;
+                border-color: #4A32FC;
+                color: #5C577D; 
+                margin-left: 20px;
+            }
+            div.footer {
+                background: #A79D59;
+                margin: 20px;
+                border: 10px groove #69629C;
+                border-radius: 0px 0px 20px 20px;
+                padding: 7px;
+                width: max-content;
             }
         </style>
     </head>
@@ -56,14 +75,14 @@
     <body>
 
         <header>
-            <h3>About Me</h3>                                <!-- Describe yourself and mp3 -->
+            <h1>김제리</h1>                                <!-- Describe yourself and mp3 -->
             <hr>
-                <p>안녕하세요? 김제리(<em>Jerry</em>)입니다.
+                <p class="start">안녕하세요? 김제리(<em>Jerry</em>)입니다.
                     저는 반 필리핀인 반 한국인입니다. 
-                    필리핀에서 태어나 8년 전에 한국으로 이사했습니다.<br>
-                    대학생이고 컴퓨터공학을 전공하고 있습니다.<br>
+                    필리핀에서 태어나 8년 전에 한국으로 이사했습니다.
+                    대학생이고 컴퓨터공학을 전공하고 있습니다.
                     우리 반 수업 중 하나는 "프로그래밍 언어 실습"인데 
-                    코딩은 계획에서 시작해야 한다는 것을 배웠습니다.<br>
+                    코딩은 계획에서 시작해야 한다는 것을 배웠습니다.
                     하지만 이 웹페이지를 만들어서야 계획이 왜 중요한지 알게 되었습니다...
                 </p>
                 <audio src="audio/intro.mp3" controls></audio>
@@ -73,10 +92,10 @@
 
         <nav>
             <h3>목차</h3>
-            <ul>
-                <li><span><a href="#interests">관심 분야</a></span></li>
-                <li><span><a href="#exercise">운동 예시</a></span></li>
-                <li><span><a href="#timetable">시간표</a></span></li>
+            <ul style="border: 3px double #69629C;">
+                <li><span><a href="#interests" class="contents">관심 분야</a></span></li>
+                <li><span><a href="#exercise" class="contents">운동 예시</a></span></li>
+                <li><span><a href="#timetable" class="contents">시간표</a></span></li>
             </ul>
         </nav><br>
 
@@ -171,8 +190,12 @@
         </section>
 
         <footer>
-            <p><a href="survey.html">설문조사</a><br>
-                2025 3월 23일 작성</p>
+            <div class="footer">
+                <p style="margin-left: 1px;"><a href="survey.html">설문조사</a><br>
+                    2025 3월 23일 작성
+                    <br>2025 4월 14일 업데이트
+                </p>
+            </div>
         </footer>
 
     </body>
